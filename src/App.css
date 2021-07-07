@@ -1,38 +1,79 @@
+:root{
+  --theme-color: #059862; 
+  --theme-color-darker: #058d5b; 
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  background-color: rgb(112, 112, 112);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-logo {
+  margin: auto 12px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-logo:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  height: 75px;
+  min-height: 75px;
+  background-color: white;
   display: flex;
-  flex-direction: column;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0 12px;
+}
+.header-menus {
+  display: flex;
+}
+.header-menus > div {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 12px 7px 12px;
+}
+.header-menus > div:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--theme-color);
+}
+.header-menus > div > svg {
+  margin-top: 4px;
+}
+
+.icon-list {
+  display: flex;
+  align-items: center;
+}
+.icon-list > svg {
+  padding: 0 10px 2px 10px;
+}
+.icon-list > svg:hover {
+  cursor: pointer;
+  color: var(--theme-color);
+}
+.button-list {
+  display: flex;
+  align-items: center;
+}
+.button-list > [class*='btn-'] {
+  margin: 0 5px;
+}
+
+[class*='btn-'] {
+  border-radius: 30px;
+  padding: 8px 25px;
+  font-size: 16px;
+}
+[class*='btn-']:hover {
+  cursor: pointer;
+  background-color: var(--theme-color-darker);
+}
+
+.btn-1 {
+  background-color: var(--theme-color);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-2 {
+  background-color: var(--theme-color);
 }
