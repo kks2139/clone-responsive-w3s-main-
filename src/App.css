@@ -53,6 +53,8 @@
   color: var(--theme-color);
 }
 .button-list {
+  flex-direction: column;
+  justify-content: space-around;
   display: flex;
   align-items: center;
 }
@@ -76,4 +78,14 @@
 }
 .btn-2 {
   background-color: var(--theme-color);
+}
+
+.panel {
+
+}
+.intro-block {
+  
+}
+.code-block {
+
 }
