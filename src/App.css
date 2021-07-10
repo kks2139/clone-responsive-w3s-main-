@@ -1,6 +1,6 @@
 :root{
-  --theme-color: #059862; 
-  --theme-color-darker: #058d5b; 
+  --theme-color: #04AA6D; 
+  --theme-color-darker: #059862; 
 }
 
 .App {
@@ -74,24 +74,63 @@
 .btn-1 {
   background-color: var(--theme-color);
   color: white;
+  font-weight: bold;
+  height: 25px;
 }
 .btn-2 {
   background-color: var(--theme-color);
+  font-weight: bold;
+  height: 25px;
 }
 
 .intro-panel {
+  padding: 30px 0;
+}
+.intro-content {
   display: flex;
-  background-color: navy;
-  color: white;
-  padding: 32px 0;
+  justify-content: center;
+}
+.intro-content [class*='btn-'] {
+  width: 155px;
+  text-align: center;
 }
 .intro-block {
-  
+  width: calc(33vw);
+  max-width: 450px;
+  min-width: 350px;
+  padding: 0 3% 3% 3%;
+  margin: auto 0;
+  text-align: center;
 }
-.code-block {
+.intro-block > h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+.intro-block [class*='btn-']  {
+  margin: 0 auto 25px auto;
+}
 
+.code-block {
+  width: calc(40vw);
+  max-width: 500px;
+  height: fit-content;
+  padding: 0 2% 0 2%;
+  margin: auto 0;
+  box-shadow: 0 5px 15px -7px black;
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px;
+  color: black;
+}
+.code-block [class*='btn-'] {
+  margin: 15px 0;
+}
+.code-box {
+  font-family: Consolas;
+  background-color: white;
+  border-left: 5px solid var(--theme-color);
+  padding: 8px;
 }
 .code-tag {color:rgb(49, 49, 214)}
 .code-red {color:red}
 .code-blue {color:blue}
-.code-brown {color:rgb(131, 75, 29)}
+.code-brown {color:rgb(202, 130, 72)}
