@@ -53,9 +53,8 @@
   color: var(--theme-color);
 }
 .button-list {
-  flex-direction: column;
-  justify-content: space-around;
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 .button-list > [class*='btn-'] {
@@ -80,8 +79,11 @@
   background-color: var(--theme-color);
 }
 
-.panel {
-
+.intro-panel {
+  display: flex;
+  background-color: navy;
+  color: white;
+  padding: 32px 0;
 }
 .intro-block {
   
@@ -89,3 +91,7 @@
 .code-block {
 
 }
+.code-tag {color:rgb(49, 49, 214)}
+.code-red {color:red}
+.code-blue {color:blue}
+.code-brown {color:rgb(131, 75, 29)}
