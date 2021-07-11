@@ -1,5 +1,5 @@
 :root{
-  --theme-color: #04AA6D; 
+  --theme-color: #04AA6D;
   --theme-color-darker: #059862; 
 }
 
@@ -114,6 +114,7 @@
   width: calc(40vw);
   max-width: 500px;
   height: fit-content;
+  line-height: 23px;
   padding: 0 2% 0 2%;
   margin: auto 0;
   box-shadow: 0 5px 15px -7px black;
@@ -127,10 +128,10 @@
 .code-box {
   font-family: Consolas;
   background-color: white;
-  border-left: 5px solid var(--theme-color);
+  border-left: 4px solid var(--theme-color);
   padding: 8px;
 }
 .code-tag {color:rgb(49, 49, 214)}
 .code-red {color:red}
 .code-blue {color:blue}
-.code-brown {color:rgb(202, 130, 72)}
+.code-brown {color:rgb(185, 93, 17)}

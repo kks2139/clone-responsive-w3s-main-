@@ -30,7 +30,7 @@ function IntroPanel({title, desc, codes, color, background}: introPanelProps){
                     <div className='btn-1'>{title} Reference</div>
                 </div>
                 <div className='code-block'>
-                    <h3>{title} Example</h3>
+                    <h3>{title} Example:</h3>
                     <div ref={codeRef} className='code-box'></div>
                     <div className='btn-1'>Try it yourself</div>
                 </div>
