@@ -1,7 +1,9 @@
 import React from 'react';
+import { useState } from 'react';
 import Header from '../components/Header';
 import IntroPanel from '../components/IntroPanel';
-import CD from '../utils/codes';
+import MenuContent from '../components/MenuContent';
+import {CD} from '../utils/datas';
 
 interface panelListAttr {
     title: string;
@@ -11,7 +13,13 @@ interface panelListAttr {
     background: string;
 }
 
+interface menuListAttr {
+    subTitle: string;
+    menuName: string[];
+}
+
 function Main(){
+    const [menuHidden, setMenuHidden] = useState(true);
     const panelList: panelListAttr[] = [
         {
             title : 'HTML', 

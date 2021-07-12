@@ -37,6 +37,10 @@
   color: white;
   background-color: var(--theme-color);
 }
+.header-menus > div.clicked {
+  color: white;
+  background-color: rgb(40, 42, 53);
+}
 .header-menus > div > svg {
   margin-top: 4px;
 }
@@ -113,7 +117,6 @@
 .code-block {
   width: calc(40vw);
   max-width: 500px;
-  height: fit-content;
   line-height: 23px;
   padding: 0 2% 0 2%;
   margin: auto 0;
@@ -126,6 +129,7 @@
   margin: 15px 0;
 }
 .code-box {
+  min-height: 180px;
   font-family: Consolas;
   background-color: white;
   border-left: 4px solid var(--theme-color);
@@ -135,3 +139,64 @@
 .code-red {color:red}
 .code-blue {color:blue}
 .code-brown {color:rgb(185, 93, 17)}
+
+.menu-content {
+  position: absolute;
+  width: 100%;
+  height: 720px;
+  background-color: rgb(40, 42, 53);
+  /* background-color: black; */
+}
+.menu-category {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.menu-category > div {
+  line-height: 80px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #FFF4A3;
+  margin-left: 70px;
+}
+.menu-category > svg {
+  padding: 20px;
+}
+.menu-category > svg:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black !important;
+  transition: .2s;
+}
+
+.menu-wrapper {
+  padding: 0 70px;
+  height: calc(100% - 130px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.menu-group {
+  width: 250px;
+  margin-bottom: 15px;
+}
+.sub-title {
+  color: #FFF4A3;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 40px;
+  padding-left: 10px;
+}
+.menu-names {
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+.menu-names:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  color: black;
+}
