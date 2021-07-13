@@ -40,9 +40,9 @@ function Header(){
                 </div>
                 <div style={{margin : '0 auto'}}></div>
                 <div className='icon-list'>
-                    <BsCircleHalf size='22'/>
-                    <ImEarth size='22'/>
-                    <AiOutlineSearch size='28'/>
+                    <BsCircleHalf size='42'/>
+                    <ImEarth size='42'/>
+                    <AiOutlineSearch size='48'/>
                 </div>
                 <div className='button-list'>
                     <div className='btn-1'>Paid Courses</div>

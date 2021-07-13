@@ -1,9 +1,19 @@
 import React from 'react';
 
-function BigCard(){
-    return (
-        <div className=''>
+interface bigCardProps {
+    title: string;
+    desc: string;
+    buttons: string;
+    backgroundColor?: string;
+}
 
+function BigCard({title, desc, buttons, backgroundColor='white'}: bigCardProps){
+    const btns = buttons.split('/');
+    return (
+        <div className='big-card' style={{backgroundColor : backgroundColor}}>
+            <div className='big-card-tit'>{title}</div>
+            <p>{desc}</p>
+            {btns.map(b => <div className='btn-2'>{b}</div>)}
         </div>
     );
 }

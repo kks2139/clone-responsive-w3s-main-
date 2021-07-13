@@ -19,7 +19,7 @@ function MenuContent({category, menuList, onCloseMenu}: MenuContentProps){
         <div className='menu-content' data-category={category} style={{display : 'none'}}>
             <div className='menu-category'>
                 <div>{category}</div>
-                <RiCloseFill size='40px' color='white' onClick={()=> {onCloseMenu()}}></RiCloseFill>
+                <RiCloseFill size='80' color='white' onClick={()=> {onCloseMenu()}}></RiCloseFill>
             </div>
 
             <div className='menu-wrapper'>
