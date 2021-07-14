@@ -156,6 +156,41 @@ export const MENUS = [
         },
 ];
 
+export const PANELS = [
+    {
+        title : 'HTML', 
+        desc : 'The Language for building web pages',
+        color : 'white',
+        background : '#282A35',
+        codes : CD.html
+    },
+    {
+        title : 'CSS', 
+        desc : 'The Language for styling web pages',
+        background : '#D9EEE1', 
+        codes : CD.css
+    },
+    {
+        title : 'JavaScript', 
+        desc : 'The Language for programming web pages',
+        background : '#FFF4A3', 
+        codes : CD.javascript
+    },
+    {
+        title : 'PYTHON', 
+        desc : 'A popular programming language',
+        color : 'white', 
+        background : '#282A35', 
+        codes : CD.python
+    },
+    {
+        title : 'SQL', 
+        desc : 'A language for accessing databases',
+        background : 'white', 
+        codes : CD.sql
+    }
+]; 
+
 export const BIGCARDS = [
     {
         title : 'PHP',

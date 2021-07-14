@@ -13,7 +13,7 @@ function BigCard({title, desc, buttons, backgroundColor='white'}: bigCardProps){
         <div className='big-card' style={{backgroundColor : backgroundColor}}>
             <div className='big-card-tit'>{title}</div>
             <p>{desc}</p>
-            {btns.map(b => <div className='btn-2'>{b}</div>)}
+            {btns.map(b => <div key={b} className='btn-2'>{b}</div>)}
         </div>
     );
 }
