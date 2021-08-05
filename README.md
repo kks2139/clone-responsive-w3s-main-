@@ -1,4 +1,4 @@
-# Clone w3s main 
+# <img src="https://pic.sopili.net/pub/emoji/twitter/2/72x72/270f.png" width=24 height=24> Clone w3s main 
 
 ### [w3schools](https://www.w3schools.com/) 메인 페이지를 참고하여 반응형 웹페이지 구현
 
